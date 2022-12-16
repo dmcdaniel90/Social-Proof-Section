@@ -19,7 +19,7 @@
 body {
     font-family: 'League Spartan', sans-serif;
     font-size: 15px;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,6 +98,7 @@ p {
     height: 100%;
     display: flex;
     align-items: center;
+    text-align: end;
 }
 
 .stars {
@@ -209,13 +210,378 @@ p {
     color: hsl(228, 45%, 44%);
   }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  body {
-    max-width: 100vw;
+@media only screen and (max-width: 480px) {
+  
+  #main {
+    padding: 0;
+    margin: 10px;
+    height: auto;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  h1 {
+    padding: 10px;
+  }
+
+  #hero p {
+    padding: 10px;
+  }
+
+  #ratings-section {
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+
+  .rating {
+    width: 80%;
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
+
+  .rating p {
+    font-size: 14px;
+  }
+
+  .stars {
+    width: 100px;
+    padding-right: 5px;
+  }
+
+  .rating:first-of-type {
+    position: initial;
+  }
+
+  .rating:nth-of-type(2) {
+    position: initial;
+  }
+
+  .rating:last-of-type {
+    position: initial;
+  }
+
+  #testimonial-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    height: auto;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .card:first-of-type {
+    position: initial;
+  }
+
+  .card:nth-of-type(2) {
+    position: initial;
+  }
+
+  .card:last-of-type {
+    position: initial;
+  }
+
+  .attribution {
+    margin: 10px auto;
   }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+   #main {
+    padding: 0;
+    margin: 20px;
+    height: auto;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  h1 {
+    padding: 10px;
+  }
+
+  #hero p {
+    padding: 10px;
+  }
+
+  #ratings-section {
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+
+  .rating {
+    width: 80%;
+    margin: 10px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-around;
+  }
+
+  .rating p {
+    font-size: 18px;
+  }
+
+  .stars {
+    width: 100px;
+    
+  }
+
+  .rating:first-of-type {
+    position: initial;
+  }
+
+  .rating:nth-of-type(2) {
+    position: initial;
+  }
+
+  .rating:last-of-type {
+    position: initial;
+  }
+
+  #testimonial-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    height: auto;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .card:first-of-type {
+    position: initial;
+  }
+
+  .card:nth-of-type(2) {
+    position: initial;
+  }
+
+  .card:last-of-type {
+    position: initial;
+  }
+
+  .attribution {
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  #main {
+   padding: 0 50px;
+   margin: 20px;
+   height: auto;
+   overflow: scroll;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ #hero {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   padding-top: 50px;
+ }
+
+ h1 {
+   padding: 10px;
+ }
+
+ #hero p {
+   padding: 10px;
+ }
+
+ #ratings-section {
+   height: auto;
+   width: 100%;
+   padding-bottom: 10px;
+   align-items: center;
+ }
+
+ .rating {
+   width: 80%;
+   margin: 10px auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   justify-content: space-around;
+ }
+
+ .rating p {
+   font-size: 18px;
+ }
+
+ .stars {
+   width: 100px;
+   
+ }
+
+ .rating:first-of-type {
+   position: initial;
+ }
+
+ .rating:nth-of-type(2) {
+   position: initial;
+ }
+
+ .rating:last-of-type {
+   position: initial;
+ }
+
+ #testimonial-section {
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .card {
+   height: auto;
+   width: 90%;
+   margin-bottom: 10px;
+ }
+
+ .card:first-of-type {
+   position: initial;
+ }
+
+ .card:nth-of-type(2) {
+   position: initial;
+ }
+
+ .card:last-of-type {
+   position: initial;
+ }
+
+ .attribution {
+   margin: 10px auto;
+ }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  
+  #main {
+   padding: 0 50px;
+   margin: 20px;
+   height: auto;
+   overflow: scroll;
+   flex-direction: row;
+   align-items: center;
+ }
+
+ #hero {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   padding-top: 50px;
+ }
+
+ h1 {
+   padding: 10px;
+ }
+
+ #hero p {
+   padding: 10px;
+ }
+
+ #ratings-section {
+   height: auto;
+   width: 50%;
+   padding-bottom: 10px;
+   align-items: center;
+ }
+
+ .rating {
+   width: 80%;
+   margin: 25px auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   justify-content: space-around;
+ }
+
+ .rating p {
+   font-size: 18px;
+ }
+
+ .stars {
+   width: 100px;
+   
+ }
+
+ .rating:first-of-type {
+   position: initial;
+ }
+
+ .rating:nth-of-type(2) {
+   position: initial;
+ }
+
+ .rating:last-of-type {
+   position: initial;
+ }
+
+ #testimonial-section {
+   height: auto;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .card {
+   height: auto;
+   width: 90%;
+   margin-bottom: 10px;
+ }
+
+ .card:first-of-type {
+   position: initial;
+ }
+
+ .card:nth-of-type(2) {
+   position: initial;
+ }
+
+ .card:last-of-type {
+   position: initial;
+ }
+
+ .attribution {
+   margin: 10px auto;
+ }
+}
   
   
   

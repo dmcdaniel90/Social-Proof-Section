@@ -93,6 +93,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: relative
 }
 
 .rating p {
@@ -115,17 +116,14 @@ header {
 }
 
 .rating:first-of-type {
-    position: relative;
     left: 20px;
 }
 
 .rating:nth-of-type(2) {
-    position: relative;
     left: 60px;
 }
 
 .rating:last-of-type {
-    position: relative;
     left: 100px;
 }
 
@@ -142,6 +140,7 @@ header {
     border-radius: 7px;
     background-color: var(--magenta1);
     height: auto;
+    min-height: 200px;
     width: 95%;
     padding: 10px 30px;
     display: flex;
@@ -643,47 +642,25 @@ header {
  }
 
  .stars {
-   width: 100px;
-   
+   width: 100px; 
  }
 
- .rating:first-of-type {
-   position: initial;
- }
-
- .rating:nth-of-type(2) {
-   position: initial;
- }
-
- .rating:last-of-type {
+ .rating:first-of-type, .rating:nth-of-type(2), .rating:last-of-type {
    position: initial;
  }
 
  #testimonial-section {
    height: auto;
-   width: 100%;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
    justify-content: space-between;
    align-items: center;
  }
 
  .card {
-   height: auto;
-   min-height: 200px;
    width: 90%;
    margin-bottom: 10px;
  }
 
- .card:first-of-type {
-   position: initial;
- }
-
- .card:nth-of-type(2) {
-   position: initial;
- }
-
- .card:last-of-type {
+ .card:first-of-type, .card:nth-of-type, .card:last-of-type(2) {
    position: initial;
  }
 }
